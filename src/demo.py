@@ -1,12 +1,12 @@
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
-
+import torch
 import _init_paths
 
 import os
 import cv2
-
+torch.backends.cudnn.enabled = False
 from opts import opts
 from detectors.detector_factory import detector_factory
 
